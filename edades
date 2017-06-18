@@ -1,0 +1,6 @@
+usuario=input('ingrese el nombre del usuario:')
+edad=int(input('ingresa tu edad actual:'))
+año=int(input(' ingresa el año actual:'))
+restante=100-edad
+suma=restante+año
+print('En el año:',suma,usuario,'cumpliras 190 años de haber nacido')
