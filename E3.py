@@ -15,11 +15,6 @@ if __name__ == '__main__':
 	}
 	print nombre
 	if dato in estudiante.iteritems():
-		{
 		print existe
-		}
-		else
-		{
-		if dato in estudiante.iteritems():
+		else:
 		print no existe
-		}
