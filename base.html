@@ -1,0 +1,26 @@
+<?php
+$action=$_REQUEST['action'];
+if ($action=="")    /* formulario */
+    {
+    ?>
+    <form  action="" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="action" value="submit">
+     edad:<br>
+    <input name="edad" type="text" value="" size="30"/><br>
+    nombre:<br>
+    <input name="nombre" type="text" value="" size="30"/><br>
+    fecha:<br>
+    <textarea name="fecha" rows="7" cols="10"></textarea><br>
+    <input type="submit" value="Guardar"/>
+    </form>
+    <?php
+    } 
+else                /* send the submitted data */
+    {
+    $name=$_REQUEST['edad'];
+    $email=$_REQUEST['nombre'];
+    $message=$_REQUEST['fecha'];
+    
+        }
+    }  
+?>
