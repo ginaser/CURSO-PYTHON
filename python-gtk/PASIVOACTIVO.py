@@ -4,12 +4,11 @@ gi.require_version('Gtk','3.0')
 from gi.repository import Gtk
 
 
-class MiVentana(Gtk.ApplicationWindow):
+class MiVentana(Gtk.Window):
 	def __init__(self,*args,**kwargs):
 		super(MiVentana,self).__init__(*args,**kwargs)
 		self.set_default_size(500,300)
-		
-
+		self.connect('delete-event',Gtk.main_quit)
 		self.agregar_contenedor()
 		self.agregar_entrada_activo()
 		self.agregar_boton_activo()
